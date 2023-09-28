@@ -3,7 +3,7 @@ const Todo = require("../../models/todo");
 
 module.exports.create = async (req,res) => {
   try {
-    console.log(req.body);
+    console.log(req);
     const dateString = req.body.date;
 const parts = dateString.split('-'); // Split the string into an array ['21', '02', '2023']
 

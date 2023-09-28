@@ -70,6 +70,7 @@ module.exports.createsession = async function (req, res) {
 
 module.exports.updateprofile = async function (req, res) {
   try {
+    
     let user = await User.findById(req.params.id);
 
     User.uploadedAvatar(req, res, function (err) {
