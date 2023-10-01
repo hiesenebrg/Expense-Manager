@@ -1,11 +1,10 @@
 const mongoose = require("mongoose");
-
+const User = require;
 const todoSchema = new mongoose.Schema(
   {
     description: {
       type: String,
       required: true,
-      
     },
     date: {
       type: Date,
@@ -13,11 +12,18 @@ const todoSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      enum: ["Food", "Transportation", "Entertainment", "Utilities","Healthcare" ],
+      enum: [
+        "Food",
+        "Transportation",
+        "Entertainment",
+        "Utilities",
+        "Healthcare",
+      ],
       required: true,
     },
-    amount: {
+    price: {
       type: Number,
+      required: true,
     },
     userid: {
       type: mongoose.Schema.Types.ObjectId,

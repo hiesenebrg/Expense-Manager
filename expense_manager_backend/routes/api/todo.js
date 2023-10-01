@@ -14,9 +14,9 @@ router.get(
 );
 
 router.get(
-  "/get/:id",
+  "/get",
   passport.authenticate("jwt", { session: false }),
-  todocontroller.get
+  todocontroller.gets
 );
 router.put(
   "/update/:id",

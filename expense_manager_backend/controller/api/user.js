@@ -87,7 +87,7 @@ console.log(__dirname)
         }
 
         user.avatar = User.avatarPath + "/" + req.file.filename;
-        console.log(user.avatar)
+        
       } else {
         console.log("chal be");
       }
