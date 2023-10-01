@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 require('dotenv').config();
-mongoose.connect(`mongodb://localhost:27017/expensemanager`);
+mongoose.connect(`mongodb+srv://adarsh:adarsh@cluster0.uz9qtre.mongodb.net/?retryWrites=true&w=majority`);
 const db = mongoose.connection;
 
 db.on("error", console.error.bind(console, "Error connecting to MongoDB"));
