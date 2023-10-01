@@ -55,7 +55,8 @@ module.exports.createsession = async function (req, res) {
         user: {
           username:user.name,
           email:user.email,
-          id:user._id
+          id:user._id,
+          avatar:user.avatar
         },
       },
     });
